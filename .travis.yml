@@ -24,5 +24,5 @@ jobs:
         - docker images
         - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
         - docker push allovince/elastic:latest;
-        - docker push allovince/elastic$TRAVIS_TAG;
+        - docker push allovince/elastic:$TRAVIS_TAG;
 
